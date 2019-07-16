@@ -172,6 +172,7 @@ i {
   height: 104px;
   margin-left: -1px;
 }
+
 .item-imgslide.type1 .bd li {
   width: 655px;
   height: 318px;
@@ -301,10 +302,7 @@ a {
   background: rgba(176, 81, 75, 0.6);
   color: #fff;
 }
-.on {
-  background: #b0514b;
-  color: #fff !important;
-}
+
 .list-date span.on {
   background: #b0514b;
   color: #fff;
@@ -340,24 +338,20 @@ a {
   margin: 0 10px 13px;
   font-size: 14px;
 }
-.item-field:hover {
-  background: #f6f6f6;
+.list-field .fade{
+  display:none;
 }
-
-.item-field.time {
-  display: block;
-}.item-field span:last-child{
+.list-field  .in{
+  display:block;
+}
+.item-field span:last-child{
   
   color: #b0514b;
 } 
-.item-field .on {
-  background: #b0514b;
-  color: #FFFFFF;
+ .on {
+  background-color: #b0514b;
+  color: #FFFFFF !important;
 }
-
- /* .item-field .on .surplus{
-  color: #ffffff
-}  */
 
 .item-field .time {
   display: block;
