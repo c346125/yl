@@ -1,0 +1,270 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    list-style: none;
+}
+/* 輪播 */
+.canter_carousel{
+    width:1903px;
+    height:600px;
+    position: relative; 
+    margin:0 auto;
+}
+.canter_carousel .carousel .item{
+    height:600px;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+.canter_carousel .carousel img{
+   width:100%;
+   height:600px;
+}
+.carousel-indicators{
+    width:200px;
+    z-index: 100;
+    position: absolute;
+    right:50%;
+    bottom: 55px;
+    margin-right:-100px;
+}
+.carousel-indicators .in{
+    float:left;
+    margin:0 5px;
+    width:14px;
+    height:14px;
+    border-radius: 50%; 
+    background:rgba(255,255,255,0.6);
+   cursor: pointer;
+
+}
+.carousel-indicators .bg{
+    background: #a42e25;
+}
+.home-notice{
+    background: url(../images/notice_bg.png);
+    width:1200px;
+    height:45px;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    margin-left:-600px;
+    z-index: 120;
+}
+.home_title{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.home_title_left{
+    background:url(../images/railling.png) no-repeat 0 0;
+    width:170px;
+    height:126px;
+}
+.home_title_cen{
+    background: url(../images/home_tit_txt.png) no-repeat 0 0;
+    width:170px;
+    height:120px;
+}
+.home_title_right{
+    background: url(../images/railling.png) no-repeat -170px 0;
+    width:170px;
+    height:126px;
+}
+.ticket{
+    position: relative;
+    width:1903px;
+    margin: 0 auto;
+    padding-bottom:60px;
+    background-color:#fff;
+}
+.ticket .ma{
+  width:130px;
+  height:155px;
+  border:1px solid #ccc;
+  text-align: center;
+  position:absolute;
+  top:55px;
+  right:55px;
+}
+.ma .ma_pic{
+    background:url(../images/qrcode-buy.png) no-repeat;
+    background-size:100% 100%;
+    width:120px;
+    height:120px;
+    margin-top:5px;
+    margin-left:5px;
+}
+.ma .tit{
+    font-size:16px;
+    color:#bbbbbb;
+}
+.ticket_m{
+    position: relative;
+}
+ .ticket_m .hd a{
+     
+     width:50px;
+     height:95px;
+     position:absolute;
+     top:282px;
+     cursor: pointer;
+ }
+ .hd .next{
+    background: url(../images/ticket_jt.png) no-repeat -50px 0;
+    right:100px;
+ }
+ .hd .prev{
+    background: url(../images/ticket_jt.png) no-repeat 0 0;
+     left:100px;
+ }
+.ticket .carousel_two{
+    height:664px;
+    width:1218px;
+    margin:0 auto; 
+    overflow: hidden;  
+}
+.car{
+    width:2436px;
+}
+.carousel_two .it_two{
+    width:1218px;
+   height:664px;
+   float: right;
+}
+.car .it_two{
+    width:2436px;
+}
+.car .it_two .items{
+    float: left;
+}
+.items{
+    width:388px;
+    height:320px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-left:9px;
+    margin-right:9px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.items img{
+    width:100%;
+    height:250px;
+    object-fit: cover;
+}
+.it_two .items h5{
+    font: normal 18px "Microsoft YaHei";
+    margin-right:90px;
+    white-space:nowrap;
+    margin-left:18px;
+    padding-top:5px;
+}
+.it_two .items p{
+    font: normal 14px "Microsoft YaHei";
+    margin-left:18px; 
+    margin-right:90px;
+}
+.it_two .items p .items_price{
+  font-family: 'Arial';
+  color:#b0514b;
+  font-size: 24px;
+}
+.it_two .items a{
+    float:right;
+    width:57px;
+    height:38px;
+    text-align: center;
+    font:normal 18px "Microsoft YaHei";
+    background:url(../images/btn-bg.png) no-repeat center;
+    margin: 15px 18px 0 0;
+    line-height: 38px;
+    filter: grayscale(100%);
+}
+.it_two .items a:hover{
+    color: #b0514b;
+    filter:grayscale(0);
+}
+.navs .navs_title .navs_title_img{
+   width:170px;
+   height:120px;
+    background:url(../images/home_tit_txt.png) no-repeat 0 0;
+    margin: 0 auto;
+}
+.navs{
+    background:url(../images/news_bg.jpg) no-repeat center 188px;
+    height: 940px;
+    background-color:#f5f5f5;
+
+}
+.navs_home{
+    width:1200px;
+    margin:0 auto;
+}
+.navs_home img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    position: relative;
+    z-index:5;
+    left: 0;
+    top:0;
+}
+.navs_home a{
+    height:100%;
+    display: block;
+    position: relative;
+    left:0;
+    top:0;
+}
+.navs_home .line_one:hover img,.navs_home .line_two:hover img{
+    transform:scale(1.1);
+    transition: 0.4s;
+}
+.navs_home .line_one{
+    width:793px;
+    height:300px;
+    float: left;
+    overflow: hidden;
+    margin-bottom:20px;
+}
+.navs_home .line_two{
+    width:387px;
+    height:300px;
+    overflow: hidden;
+    float: left;
+    margin-bottom:20px;
+    margin-left:19px;
+}
+.navs_tails{
+    position: absolute;
+    left:0;
+    top:240px;
+    width:100%;
+    height:60px;
+    z-index:7;
+    color:#fff;
+    background:rgba(51,51,51,0.6)
+}
+.navs_tails p{
+   font-size:18px;
+   padding:12px 20px 0;
+}
+.oo{
+    margin-left:0;
+    transition: 0.6s;
+}
+.ooo{
+    margin-left:-1218px;
+    transition: 0.6s;
+}
+.navs_home>div:nth-child(3){
+    margin-left: 0 !important;
+}

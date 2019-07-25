@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       
+      <style>
+          .content{
+            width: 80%;
+              float: left;
+              background-color: pink;
+          }
+          .content div{
+             display: none;
+           }
+          .sideBar{
+              width: 20%;
+              float: left;
+          }
+           .content div.selected{
+               display: block;
+          }
+      </style>
+  </head>
+  <body>
+       <div class="sideBar">
+          <ul class="nav nav-pills nav-stacked">
+               <li role="presentation" class="active">
+                   <a href="#">房源列表</a>
+              </li>
+               <li role="presentation">
+                   <a href="#">我的申请</a>
+              </li>
+             <li role="presentation">
+                 <a href="#">密码修改</a>
+              </li>
+         </ul>
+       </div>
+
+      <div class="content">
+           <div class="content1 selected">第一段文本</div>
+           <div class="content1">第二段文本</div>
+          <div class="content1">第三短文本</div>
+      </div>
+       <script>
+          $('.sideBar ul li').click(function(){
+             $(this).addClass('active').siblings().removeClass('active');
+               $('.content > div').eq($(this).index()).addClass('selected').siblings().removeClass('selected');
+         })
+     </script>
+        </body>
+</html>

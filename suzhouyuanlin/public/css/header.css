@@ -1,0 +1,108 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+.container{
+    height: 56px;
+    padding: 3px 0;
+    border-top:1px solid #f9f7f7;
+    border-bottom:1px solid#f9f7f7;
+    position: absolute;
+    left:0;
+    top:40px;
+    z-index: 1000;
+    width:100%;
+}
+.page-header-bg{
+    height: 56px;
+    background: url(../images/nav_bg.png) repeat center;
+
+}
+.page-header{
+    width: 1200px;
+    height: 56px;
+    margin: 0 auto;
+}
+h1.header-logo{
+    width: 160px;
+    height: 56px;
+    float: left;
+    background: url(../images/logo.png) no-repeat center;
+}
+.header-logo a{
+    display: block;
+    height: 100%;
+   
+    overflow: hidden;
+}
+.page-header .header-member{
+    float:right;
+    width: 34px;
+    height: 100%;
+    background: url(../images/icon_agg.png) no-repeat -36px 0px;
+    overflow: hidden;
+}
+.page-header .header-member:hover{
+    background: url(../images/icon_agg.png) no-repeat -70px 0px;   
+}
+
+.page-header nav {
+    margin-right: 135px;
+}
+
+.page-header nav {
+    font-family: 'KaiTi';
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 56px;
+    float: right;
+}
+.page-header nav a.hover {
+    color: #a42e25;
+}
+
+.page-header nav a {
+    float: left;
+    padding: 0 24px;
+    position: relative;
+    margin: 0 12px;
+}
+.page-header nav a.hove:before {
+    display: block;
+}
+.page-header nav a:before {
+    content: '';
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 18px;
+    height: 100%;
+    background: url(../images/icon_agg.png) no-repeat -18px 0;
+}
+.page-header nav a.hove:after {
+    display: block;
+}
+.page-header nav a:after {
+    content: '';
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 18px;
+    background: url(../images/icon_agg.png) no-repeat 0 0;
+}
+.page-header nav a{
+    color:#333;
+}
+.page-header nav a:hover{
+    color: #a42e25;
+}

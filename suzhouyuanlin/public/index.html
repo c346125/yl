@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header id="header" class="container"></header>
+    <div id="app">
+    <div class="canter_carousel" >
+        <!-- 轮播图片 -->
+        <div class="carousel">
+            <div class="item" v-for="(c,index) of carousel":key="index"><img :src="c.img" alt=""></div>
+            <!-- <div class="item"><img src="carousel/1078214928675942401.jpg" alt=""></div>
+            <div class="item"><img src="carousel/1078215007902150657.jpg" alt=""></div>
+            <div class="item"><img src="carousel/1078216587573506049.jpg" alt=""></div>
+            <div class="item"><img src="carousel/1078216952243073026.jpg" alt=""></div> -->
+        </div>
+        <!-- 轮播指示器 -->
+        <ul class="carousel-indicators">
+            <li class="in"></li>
+            <li class="in"></li>
+            <li class="in"></li>
+            <li class="in"></li>
+            <li class="in"></li>
+        </ul>
+        <div class="home-notice"></div>
+    </div> 
+     <div class="ticket">
+         <!-- 门帘 -->
+         <div class="home_title">
+             <div class="home_title_left"></div>
+             <div class="home_title_cen"></div>
+             <div class="home_title_right"></div>
+         </div>
+         <div class="ma">
+             <div class="ma_pic"></div>
+             <div class="tit">扫码购票更快捷</div>
+         </div>
+        <div class="ticket_m"> 
+         <!-- 左右箭头 -->
+             <div class="hd">
+                 <a class="next"></a>
+                 <a class="prev"></a>
+             </div>
+         <!-- 轮播 -->
+            <div class="carousel_two">
+                <div class="car">
+                    <div class="it_two">
+                        <div class="items" v-for="(s,i) of scenic":key="i">
+                            <img :src="s.pic" alt="">
+                            <a :href="s.href">购票</a>
+                            <h5 v-text="s.pname"></h5>
+                            <p>CNY: <span class="items_price" v-text="s.price"></span>元</p>
+                        </div>
+                        <!-- <div class="items">
+                            <img src="../public/picture/1068405978413056001.jpg" alt="">
+                            <a href="">购票</a>
+                            <h5>狮子林</h5>
+                            <p>CNY: <span class="items_price">38</span>元</p>
+                        </div>
+                        <div class="items">
+                            <img src="../public/picture/1069404958819229697.jpg" alt="">
+                            <a href="">购票</a>
+                            <h5>虎丘</h5>
+                            <p>CNY: <span class="items_price">78</span>元</p>
+                        </div>
+                        <div class="items">
+                            <img src="../public/picture/1069407199223488514.jpg" alt="">
+                            <a href="">购票</a>
+                            <h5>留园</h5>
+                            <p>CNY: <span class="items_price">53</span>元</p>
+                        </div>
+                        <div class="items">
+                            <img src="../public/picture/1069407827513450498.jpg" alt="">
+                            <a href="">购票</a>
+                            <h5>天平山</h5>
+                            <p>CNY: <span class="items_price">27</span>元</p>
+                        </div>
+                        <div class="items">
+                            <img src="../public/picture/1069408765229801473.jpg" alt="">
+                            <a href="">购票</a>
+                            <h5>耦园</h5>
+                            <p>CNY: <span class="items_price">22.5</span>元</p>
+                        </div>
+                    </div>
+                    <div class="it_two"> 
+                        <div class="items">
+                            <img src="../public/picture/1069409288502779905.jpg" alt="">
+                            <a href="">购票</a>
+                            <h5>网师园</h5>
+                            <p>CNY: <span class="items_price">38</span>元</p>
+                        </div>
+                        <div class="items">
+                            <img src="../public/picture/1069409859976699905.jpg" alt="">
+                            <a href="">购票</a>
+                            <h5>沧浪亭</h5>
+                            <p>CNY: <span class="items_price">18</span>元</p>
+                        </div>
+                        <div class="items">
+                            <img src="../public/picture/1069410142978973698.jpg" alt="">
+                            <a href="">购票</a>
+                            <h5>可园</h5>
+                            <p>CNY: <span class="items_price">22.5</span>元</p>
+                        </div>
+                        <div class="items">
+                            <img src="../public/picture/1069410265393930242.jpg" alt="">
+                            <a href="">购票</a>
+                            <h5>枫桥</h5>
+                            <p>CNY: <span class="items_price">23</span>元</p>
+                        </div>
+                        <div class="items">
+                            <img src="../public/picture/1069411271565516802.jpg" alt="">
+                            <a href="">购票</a>
+                            <h5>上方山森林动物世界</h5>
+                            <p>CNY: <span class="items_price">60</span>元</p>
+                        </div>
+                        <div class="items">
+                            <img src="../public/picture/1069410764738404354.jpg" alt="">
+                            <a href="">购票</a>
+                            <h5>植物园</h5>
+                            <p>CNY: <span class="items_price">38</span>元</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div> 
+     <div class="navs">
+         <div class="navs_title">
+             <div class="navs_title_img"></div>
+         </div>
+         <div class="navs_home">
+                <div class="line_one">
+                <a href="">
+                    <img :src="m1.img" alt=""> 
+                    <div class="navs_tails">
+                     <p v-text="m1.title"></p>
+                     <p></p>
+                    </div> 
+                </a>
+                </div>
+                <div class="line_two" v-for="(m,index) of  message":key="index"> 
+                    <a href="">
+                <img :src="m.img" alt="">
+                <div class="navs_tails">
+                  <p v-text="m.title"></p>
+                </div> 
+                    </a> 
+                  </div>
+                <!-- <div class="line_two" style="margin:0;"> 
+                    <a href="">
+                    <img src="../public/picture/1120614118844362753.jpg" alt="">
+                    <div class="navs_tails">
+                    <p>关于拙政园旅行社团体价调整通知</p>
+                    </div> 
+                    </a> 
+               </div>
+                <div class="line_two"> 
+                    <a href="">
+                 <img src="../public/picture/1113353004771192834.jpg" alt=""> 
+                <div class="navs_tails">
+                  <p>关于枫桥景区施工改造期间实行闭园管理...</p>
+                 </div> 
+                   </a>
+                </div>
+                <div class="line_two"> 
+                    <a href="">
+                    <img src="../public/picture/1078130348371554305.jpg" alt=""> 
+                    <div class="navs_tails">
+                      <p>2019年园林年卡办理公告</p>
+                    </div>   
+                   </a>
+               </div> -->
+         </div>
+     </div>
+    </div>
+     <footer></footer>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script src="js/index.js"></script>  
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>
